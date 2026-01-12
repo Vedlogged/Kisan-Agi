@@ -1,0 +1,42 @@
+{
+  "name": "kisan-agi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd frontend && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krishna-cell-12/Kisan-AGI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Krishna-cell-12/Kisan-AGI/issues"
+  },
+  "homepage": "https://github.com/Krishna-cell-12/Kisan-AGI#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^7.18.0",
+    "@google-cloud/vertexai": "^1.10.0",
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "expo": "^54.0.30",
+    "expo-location": "~19.0.8",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.2",
+    "multer": "^2.0.2",
+    "react-native-maps": "1.20.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.11"
+  }
+}
